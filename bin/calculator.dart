@@ -11,25 +11,25 @@ void main(List<String> arguments) {
   operation = stdin.readLineSync();
   print('Enter the second number: ');
   secondNumber = int.tryParse(stdin.readLineSync());
-  
+
   if (firstNumber != null && secondNumber != null) {
     switch (operation.substring(0, 1)) {
       //to select the operation only
       case '*':
         result = firstNumber * secondNumber;
-        print(result);
+        print('Result: $result');
         break;
       case '/':
         result = firstNumber / secondNumber;
-        print(result);
+        print('Result: $result');
         break;
       case '+':
         result = firstNumber + secondNumber;
-        print(result);
+        print('Result: $result');
         break;
       case '-':
         result = firstNumber - secondNumber;
-        print(result);
+        print('Result: $result');
         break;
     }
   } else {
